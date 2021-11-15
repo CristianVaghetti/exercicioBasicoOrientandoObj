@@ -38,6 +38,7 @@ class Livro {
     public function avancarPag(){
         if($this->pagAtual < $this->totPaginas)
             $this->pagAtual ++;
+        else $this->pagAtual = "Terminou!";
     }
 
     public function voltarPag(){
